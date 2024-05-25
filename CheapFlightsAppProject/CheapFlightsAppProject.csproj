@@ -6,4 +6,16 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Swashbuckle" Version="5.6.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="wwwroot\Images\backgroundImage.jpg" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AdditionalFiles Include="Views\Home\LoggedIn.cshtml" />
+    </ItemGroup>
+
 </Project>
