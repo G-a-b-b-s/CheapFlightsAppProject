@@ -17,6 +17,11 @@ public class HomeController : Controller
     {
         return View();
     }
+
+    public IActionResult LoginForm()
+    {
+        return View();
+    }
     public async Task<IActionResult> CheckLogin(string login, string haslo)
     {
        // foreach (Login l in logins)
