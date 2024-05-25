@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using CheapFlightsAppProject.Database;
 using Microsoft.AspNetCore.Mvc;
 using CheapFlightsAppProject.Models;
 
@@ -7,10 +8,12 @@ namespace CheapFlightsAppProject.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private DbHandler db;
 
     public HomeController(ILogger<HomeController> logger)
     {
         _logger = logger;
+        db = new DbHandler();
     }
 
     public IActionResult Index()
@@ -42,8 +45,13 @@ public class HomeController : Controller
                 // await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
                 //
                 // HttpContext.Session.SetString("login", (new DateTimeOffset(DateTime.Now.AddDays(7))).ToString());
-                return RedirectToAction("LoggedIn");
-            //}
+                if (db.checkCredentials(login, haslo)) {
+                    return RedirectToAction("LoggedIn");
+                }
+                else {
+                    return RedirectToAction("Index");
+                }
+                //}
         //}
        // return RedirectToAction("Index");
             
