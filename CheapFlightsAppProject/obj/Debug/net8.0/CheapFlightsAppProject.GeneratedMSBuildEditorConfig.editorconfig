@@ -20,28 +20,30 @@ build_property._RazorSourceGeneratorDebug =
 
 [C:/Users/48735/Desktop/PZ2/CheapFlightsAppProject/CheapFlightsAppProject/Views/Home/LoggedIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = 
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dnZWRJbi5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/48735/Desktop/PZ2/CheapFlightsAppProject/CheapFlightsAppProject/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/48735/Desktop/PZ2/CheapFlightsAppProject/CheapFlightsAppProject/Views/Home/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/48735/Desktop/PZ2/CheapFlightsAppProject/CheapFlightsAppProject/Views/Home/LoginForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbkZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/48735/Desktop/PZ2/CheapFlightsAppProject/CheapFlightsAppProject/Views/Home/MainPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNYWluUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/48735/Desktop/PZ2/CheapFlightsAppProject/CheapFlightsAppProject/Views/Home/MyAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNeUFjY291bnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/48735/Desktop/PZ2/CheapFlightsAppProject/CheapFlightsAppProject/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/48735/Desktop/PZ2/CheapFlightsAppProject/CheapFlightsAppProject/Views/Home/WorldMap.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxXb3JsZE1hcC5jc2h0bWw=
+[C:/Users/48735/Desktop/PZ2/CheapFlightsAppProject/CheapFlightsAppProject/Views/Home/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/48735/Desktop/PZ2/CheapFlightsAppProject/CheapFlightsAppProject/Views/Shared/Error.cshtml]
@@ -63,3 +65,7 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/48735/Desktop/PZ2/CheapFlightsAppProject/CheapFlightsAppProject/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-3kk9iytzef
+
+[C:/Users/48735/Desktop/PZ2/CheapFlightsAppProject/CheapFlightsAppProject/Views/Shared/_MainLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NYWluTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-1p1wtbmqjg

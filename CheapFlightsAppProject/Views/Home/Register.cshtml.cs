@@ -2,7 +2,7 @@
 
 namespace CheapFlightsAppProject.Views.Home;
 
-public class WorldMap : PageModel
+public class Register : PageModel
 {
     public void OnGet()
     {
