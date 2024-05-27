@@ -9,18 +9,18 @@
     <h1 class="display-4">Cheap Flights </h1>
     <h2>Find your next adventure</h2>
 
-    <form method="post">
+    <form method="post"  asp-controller="Home" asp-action="SearchFlight">
         <div class="form-group">
             <label for="DepartureCity">Departure City 🛫</label>
-            <input type="text" placeholder = "Departure City 🛫" class="form-control" id="DepartureCity" name="DepartureCity" required/>
+            <input type="text" placeholder = "Departure City 🛫" class="form-control" id="DepartureCity" name="DepartureCity"/>
         </div>
         <div class="form-group">
             <label for="DestinationCity">Destination City 🛬</label>
-            <input type="text" placeholder = "Destination City 🛬" class="form-control" id="DestinationCity" name="DestinationCity" required/>
+            <input type="text" placeholder = "Destination City 🛬" class="form-control" id="DestinationCity" name="DestinationCity"/>
         </div>
         <div class="form-group">
             <label for="FlightDate">Flight Date 📆</label>
-            <input type="date" placeholder="Flight Date 📆" class="form-control" id="FlightDate" name="FlightDate" required/>
+            <input type="date" placeholder="Flight Date 📆" class="form-control" id="FlightDate" name="FlightDate"/>
         </div>
         <button type="submit" class="btn btn-primary">Search Flights</button>
     </form>

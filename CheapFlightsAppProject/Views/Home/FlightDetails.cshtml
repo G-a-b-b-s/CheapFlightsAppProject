@@ -1,0 +1,26 @@
+@page
+@using CheapFlightsAppProject.Database
+
+<head>
+    <link href="~/css/site.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+        @foreach (Flight flight in ViewBag.flights) {
+            <ul class="flight-list">
+                <li class="flight-item">
+                    <span class="flight-detail">Lot z: @flight.departure</span>
+                </li>
+                <li class="flight-item">
+                    <span class="flight-detail">Lot do: @flight.destination</span>
+                </li>
+                <li class="flight-item">
+                    <span class="flight-detail">Data: @flight.date</span>
+                </li>
+                <li class="flight-item">
+                    <span class="flight-detail">Cena: @flight.price</span>
+                </li>
+            </ul>
+        }
+</div>
+</body>

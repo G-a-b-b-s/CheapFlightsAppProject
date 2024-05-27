@@ -10,6 +10,8 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CheapFlightsAppProject
 build_property.RootNamespace = CheapFlightsAppProject
 build_property.ProjectDir = /home/bartosz/Desktop/pz2/projekt/CheapFlightsAppProject/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
@@ -20,6 +22,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = 
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Mb2dnZWRJbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/bartosz/Desktop/pz2/projekt/CheapFlightsAppProject/Views/Home/FlightDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9GbGlnaHREZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/bartosz/Desktop/pz2/projekt/CheapFlightsAppProject/Views/Home/Index.cshtml]
@@ -36,6 +42,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/home/bartosz/Desktop/pz2/projekt/CheapFlightsAppProject/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/bartosz/Desktop/pz2/projekt/CheapFlightsAppProject/Views/Home/SignUpForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9TaWduVXBGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/bartosz/Desktop/pz2/projekt/CheapFlightsAppProject/Views/Shared/Error.cshtml]

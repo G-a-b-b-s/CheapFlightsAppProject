@@ -17,4 +17,31 @@ public class DbHandler {
             return false;
         }
     }
+
+    public bool createUser(string login, string pass) {
+        try {
+            connection.Execute($"INSERT INTO users VALUES('{login}', '{pass}', 0)");
+            return true;
+        }
+        catch (SqliteException e) {
+            Console.WriteLine(e.Message + " " + $"INSERT INTO users VALUES('{login}', '{pass}', 0)");
+            return false;
+        }
+    }
+
+    public List<Flight> searchFlights(string dep, string dest, string date) {
+        // Console.WriteLine($"SELECT * FROM flights " +
+        //                   $"WHERE departure='{dep}'" +
+        //                   $"AND destination='{dest}'" +
+        //                   $"AND date like '{date}%'"   
+        // );        
+        Console.WriteLine(date);
+        List <Flight> flight =
+            connection.Query<Flight>($"SELECT * FROM flights " +
+                                     $"WHERE departure like '{dep}%'" +
+                                     $"AND destination like '{dest}%'"+
+                                     $"AND date like '{date}%'"
+            ).ToList();
+        return flight;
+    }
 }

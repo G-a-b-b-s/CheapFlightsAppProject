@@ -31,7 +31,6 @@
 /home/bartosz/Desktop/pz2/projekt/CheapFlightsAppProject/obj/Debug/net7.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /home/bartosz/Desktop/pz2/projekt/CheapFlightsAppProject/obj/Debug/net7.0/scopedcss/bundle/CheapFlightsAppProject.styles.css
 /home/bartosz/Desktop/pz2/projekt/CheapFlightsAppProject/obj/Debug/net7.0/scopedcss/projectbundle/CheapFlightsAppProject.bundle.scp.css
-/home/bartosz/Desktop/pz2/projekt/CheapFlightsAppProject/obj/Debug/net7.0/CheapFlightsAppProject.csproj.CopyComplete
 /home/bartosz/Desktop/pz2/projekt/CheapFlightsAppProject/obj/Debug/net7.0/CheapFlightsAppProject.dll
 /home/bartosz/Desktop/pz2/projekt/CheapFlightsAppProject/obj/Debug/net7.0/refint/CheapFlightsAppProject.dll
 /home/bartosz/Desktop/pz2/projekt/CheapFlightsAppProject/obj/Debug/net7.0/CheapFlightsAppProject.pdb
@@ -63,3 +62,5 @@
 /home/bartosz/Desktop/pz2/projekt/CheapFlightsAppProject/bin/Debug/net7.0/runtimes/win-arm64/native/e_sqlite3.dll
 /home/bartosz/Desktop/pz2/projekt/CheapFlightsAppProject/bin/Debug/net7.0/runtimes/win-x64/native/e_sqlite3.dll
 /home/bartosz/Desktop/pz2/projekt/CheapFlightsAppProject/bin/Debug/net7.0/runtimes/win-x86/native/e_sqlite3.dll
+/home/bartosz/Desktop/pz2/projekt/CheapFlightsAppProject/obj/Debug/net7.0/CheapFlightsAppProject.sourcelink.json
+/home/bartosz/Desktop/pz2/projekt/CheapFlightsAppProject/obj/Debug/net7.0/CheapFli.BE33ECE5.Up2Date

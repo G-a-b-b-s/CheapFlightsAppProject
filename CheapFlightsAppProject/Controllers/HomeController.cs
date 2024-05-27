@@ -25,9 +25,17 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult SignUpForm()
+    {
+        return View();
+    }
+
+    public IActionResult FlightDetails(string arg) {
+        return View();
+    }
     public async Task<IActionResult> CheckLogin(string login, string haslo)
     {
-       // foreach (Login l in logins)
+        // foreach (Login l in logins)
        //{
        //     string hashedPassword = Database.Utils.CalculateMD5Hash(haslo);
        //     Console.WriteLine($"HASHED PASSWORD : {hashedPassword}");
@@ -45,17 +53,36 @@ public class HomeController : Controller
                 // await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
                 //
                 // HttpContext.Session.SetString("login", (new DateTimeOffset(DateTime.Now.AddDays(7))).ToString());
-                if (db.checkCredentials(login, haslo)) {
-                    return RedirectToAction("LoggedIn");
-                }
-                else {
-                    return RedirectToAction("Index");
-                }
-                //}
-        //}
-       // return RedirectToAction("Index");
-            
+        var md5 = System.Security.Cryptography.MD5.Create();
+        byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(haslo);
+        byte[] hashBytes = md5.ComputeHash(inputBytes);
+        if (db.checkCredentials(login, Convert.ToHexString(hashBytes))) {
+            return RedirectToAction("LoggedIn");
+        }
+        else {
+            return RedirectToAction("Index");
+        }
     }
+
+    public async Task<IActionResult> SignUp(string login, string haslo, string hasloConf) {
+        if (haslo == hasloConf) {
+            // Czy trzeba uzywac using tutaj??
+            var md5 = System.Security.Cryptography.MD5.Create();
+            byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(haslo);
+            byte[] hashBytes = md5.ComputeHash(inputBytes);
+            
+            if (db.createUser(login, Convert.ToHexString(hashBytes))) {
+                return RedirectToAction("LoginForm");
+            }
+        }
+        return RedirectToAction("Index");
+    }
+
+    public async Task<IActionResult> SearchFlight(string departureCity, string destinationCity, string flightDate) {
+        ViewBag.flights = db.searchFlights(departureCity, destinationCity, flightDate);
+        return View("FlightDetails");
+    }
+    
     public IActionResult LoggedIn()
     {
         return View();
