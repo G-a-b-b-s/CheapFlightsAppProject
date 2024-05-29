@@ -2,7 +2,7 @@
 
 namespace CheapFlightsAppProject.Views.Home;
 
-public class Login : PageModel
+public class MainPage : PageModel
 {
     public void OnGet()
     {
