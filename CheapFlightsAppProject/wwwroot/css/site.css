@@ -27,5 +27,6 @@ label{
   font-size: 20px;
 }
 body button.btn {
+  margin-top: 10px;
   background-color: #ef6834;
 }

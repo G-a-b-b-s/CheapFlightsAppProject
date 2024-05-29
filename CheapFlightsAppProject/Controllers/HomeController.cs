@@ -25,39 +25,27 @@ public class HomeController : Controller
     {
         return View();
     }
+
     public IActionResult SignUpForm()
     {
         return View();
     }
 
     public IActionResult FlightDetails(string arg) {
+
+
+    public IActionResult Register()
+    {
+
         return View();
     }
     public async Task<IActionResult> CheckLogin(string login, string haslo)
     {
-        // foreach (Login l in logins)
-       //{
-       //     string hashedPassword = Database.Utils.CalculateMD5Hash(haslo);
-       //     Console.WriteLine($"HASHED PASSWORD : {hashedPassword}");
-       //     if (login == l.Username && hashedPassword == l.Password)
-       //     {
-                // var claims = new List<Claim>
-                // {
-                //     new Claim(ClaimTypes.Name, login)
-                // };
-
-                // var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-                //
-                // var principal = new ClaimsPrincipal(identity);
-                //
-                // await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
-                //
-                // HttpContext.Session.SetString("login", (new DateTimeOffset(DateTime.Now.AddDays(7))).ToString());
         var md5 = System.Security.Cryptography.MD5.Create();
         byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(haslo);
         byte[] hashBytes = md5.ComputeHash(inputBytes);
         if (db.checkCredentials(login, Convert.ToHexString(hashBytes))) {
-            return RedirectToAction("LoggedIn");
+            return RedirectToAction("MainPage");
         }
         else {
             return RedirectToAction("Index");
@@ -70,7 +58,6 @@ public class HomeController : Controller
             var md5 = System.Security.Cryptography.MD5.Create();
             byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(haslo);
             byte[] hashBytes = md5.ComputeHash(inputBytes);
-            
             if (db.createUser(login, Convert.ToHexString(hashBytes))) {
                 return RedirectToAction("LoginForm");
             }
@@ -82,18 +69,31 @@ public class HomeController : Controller
         ViewBag.flights = db.searchFlights(departureCity, destinationCity, flightDate);
         return View("FlightDetails");
     }
+
+
+    public async Task<IActionResult> CheckRegister()
+    {
+        return null;
+    }
     
-    public IActionResult LoggedIn()
+    public IActionResult MainPage()
+    {
+        ViewBag.Name = "Joe";
+        ViewBag.Surname = "Doe";
+        return View();
+       
+    }
+
+    public IActionResult MyAccount()
     {
         return View();
+    }
+    public IActionResult Logout()
+    {
+        return RedirectToAction("Index");
     }
 
     public IActionResult Privacy()
-    {
-        return View();
-    }
-
-    public IActionResult Login()
     {
         return View();
     }

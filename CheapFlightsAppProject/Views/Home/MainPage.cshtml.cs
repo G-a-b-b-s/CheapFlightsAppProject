@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace CheapFlightsAppProject.Views;
+namespace CheapFlightsAppProject.Views.Home;
 
-public class LoggedIn : PageModel
+public class MainPage : PageModel
 {
     public void OnGet()
     {
