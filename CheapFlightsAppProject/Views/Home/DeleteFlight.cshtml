@@ -1,0 +1,30 @@
+﻿@model dynamic
+
+@if (ViewBag.role=="0"){
+Layout = "_MainLayout";
+}
+else {
+Layout = "_AdminMainLayout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Delete Flight !</title>
+</head>
+<body>
+<div>
+    <div class="text-center">
+        <h1 class="display-4">Delete Flight ✈️</h1>
+        <form method="post" asp-controller="Home" asp-action="ModifyDataBase">
+            <div class="form-group">
+                <label for="FlightNumber"></label>
+                <input type="text" placeholder="Flight Number" class="form-control" id="FlightNumber" name="FlightNumber" required/>
+            </div>
+            <button type="submit" class="btn btn-primary">Delete flight!</button>
+        </form>
+    </div>  
+</div>
+</body>
+</html>

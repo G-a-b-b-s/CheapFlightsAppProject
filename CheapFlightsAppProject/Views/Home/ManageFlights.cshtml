@@ -1,0 +1,22 @@
+﻿@page
+@model CheapFlightsAppProject.Views.Home.ManageFlights
+
+@if (ViewBag.role=="0"){
+Layout = "_MainLayout";
+}
+else {
+Layout = "_AdminMainLayout";
+}
+
+<head>
+    <link href="~/css/adminMainPage.css" rel="'stylesheet">
+</head>
+
+<div class="text-center">
+    <h1 class="display-4">What would you like to do? </h1>
+    <form method="post" >
+        <button type="submit" class="btn btn-primary"  asp-controller="Home" asp-action="AddFlight">Add flight</button>
+        <button type="submit" class="btn btn-primary" asp-controller="Home" asp-action="EditFlight">Edit flight</button>
+        <button type="submit" class="btn btn-primary" asp-controller="Home" asp-action="DeleteFlight">Delete flight</button>
+    </form>
+</div>

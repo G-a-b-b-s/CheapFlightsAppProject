@@ -1,0 +1,52 @@
+﻿@model dynamic
+
+@if (ViewBag.role=="0"){
+Layout = "_MainLayout";
+}
+else {
+Layout = "_AdminMainLayout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Edit Flight</title>
+</head>
+<body>
+<div class="text-center">
+    <h1 class="display-4">Edit Flight ✈️</h1>
+    <form method="post" asp-controller="Home" asp-action="ModifyDataBase">
+        <div class="form-group">
+            <label for="Departure"></label>
+            <input type="text" placeholder="Departure 🌎" class="form-control" id="Departure" name="Departure" required />
+        </div>
+        <div class="form-group">
+            <label for="Destination"></label>
+            <input type="text" placeholder="Destination🌎" class="form-control" id="Destination" name="Destination" required/>
+        </div>
+        <div class="form-group">
+            <label for="Date"></label>
+            <input type="text" placeholder="Date📅" class="form-control" id="Date" name="Date" required/>
+        </div>
+        <div class="form-group">
+            <label for="FlightDuration"></label>
+            <input type="text" placeholder="Flight duration 🕘" class="form-control" id="FlightDuration" name="FlightDuration" required/>
+        </div>
+        <div class="form-group">
+                    <label for="Price"></label>
+                    <input type="number" placeholder="Price 💸" class="form-control" id="Price" name="Price" required/>
+                </div>
+        <div class="form-group">
+            <label for="FlightNumber"></label>
+            <input type="text" placeholder="Flight Number" class="form-control" id="FlightNumber" name="FlightNumber" required/>
+        </div>
+        <div class="form-group">
+            <label for="FlightOperator"></label>
+            <input type="text" placeholder="Flight Operator 👩‍✈️" class="form-control" id="FlightOperator" name="FlightOperator" required/>
+        </div>
+        <button type="submit" class="btn btn-primary">Edit flight!</button>
+    </form>
+</div>
+</body>
+</html>

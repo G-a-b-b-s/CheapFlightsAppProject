@@ -1,0 +1,34 @@
+﻿@page
+@model CheapFlightsAppProject.Views.Home.LoginForm
+
+@if(TempData["Message"] != null)
+{
+    <div class="alert alert-success" id="tempMessage">
+        @TempData["Message"]
+    </div>
+}
+<div class="text-center">
+    <h1 class="display-4">Log in </h1>
+    <form method="post" asp-controller="Home" asp-action="CheckLogin">
+        <div class="form-group">
+            <label for="Login">Login</label>
+            <input type="text" placeholder="Login 🌎" class="form-control" id="Login" name="Login" required />
+        </div>
+        <div class="form-group">
+            <label for="Haslo">Password</label>
+            <input type="password" placeholder="Password 🔐" class="form-control" id="Haslo" name="Haslo"  required/>
+        </div>
+        <div>
+            Still don't have an account? Register now!
+            <a asp-controller="Home" asp-action="SignUpForm" style="font-size: 20px;">Register</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Log In !</button>
+    </form>
+</div>
+
+<script>
+    setTimeout(function() {
+        document.getElementById('tempMessage').classList.add('fade');
+    }, 3000);
+</script>

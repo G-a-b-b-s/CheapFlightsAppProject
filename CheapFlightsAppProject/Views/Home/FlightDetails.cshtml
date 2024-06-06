@@ -1,0 +1,34 @@
+@page
+@using CheapFlightsAppProject.Database
+
+@if (ViewBag.role=="0"){
+Layout = "_MainLayout";
+}
+else {
+Layout = "_AdminMainLayout";
+}
+
+<head>
+    <link href="~/css/Flights.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        @foreach (Flight flight in ViewBag.flights) {
+            <div class="flight-card">
+                <div class="flight-content">
+                    <div>
+                        
+                        <div class="flight-description">@flight.Departure</div>
+                        <div class="flight-header">@flight.Destination</div>
+                        <div class="flight-detail">@flight.Date</div>
+                        <div class="flight-detail">Duration: @(Int32.Parse(flight.FlightDuration)/60)h @(Int32.Parse(flight.FlightDuration) - (Int32.Parse(flight.FlightDuration)/60)*60)min</div>
+                        <div class="flight-detail">@flight.FlightNumber</div>
+                        <div class="flight-detail">@flight.FlightOperator</div>
+                        <a class="nav-link text-dark" asp-controller="Home" asp-action="SaveFlight" asp-route-myData=@flight.FlightNumber>Save</a>
+                    </div>
+                    <div class="flight-price">zł @flight.Price</div>
+                </div>
+            </div>
+        }
+    </div>
+</body>

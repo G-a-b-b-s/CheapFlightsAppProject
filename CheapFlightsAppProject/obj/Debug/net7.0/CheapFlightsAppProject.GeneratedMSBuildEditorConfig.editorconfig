@@ -1,0 +1,89 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CheapFlightsAppProject
+build_property.RootNamespace = CheapFlightsAppProject
+build_property.ProjectDir = /home/bartosz/Desktop/CheapFlightsAppProject-master2/CheapFlightsAppProject/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/bartosz/Desktop/CheapFlightsAppProject-master2/CheapFlightsAppProject
+build_property._RazorSourceGeneratorDebug = 
+
+[/home/bartosz/Desktop/CheapFlightsAppProject-master2/CheapFlightsAppProject/Views/Home/AddFlight.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BZGRGbGlnaHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/bartosz/Desktop/CheapFlightsAppProject-master2/CheapFlightsAppProject/Views/Home/DeleteFlight.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9EZWxldGVGbGlnaHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/bartosz/Desktop/CheapFlightsAppProject-master2/CheapFlightsAppProject/Views/Home/EditFlight.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9FZGl0RmxpZ2h0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/bartosz/Desktop/CheapFlightsAppProject-master2/CheapFlightsAppProject/Views/Home/FlightDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9GbGlnaHREZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/bartosz/Desktop/CheapFlightsAppProject-master2/CheapFlightsAppProject/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/bartosz/Desktop/CheapFlightsAppProject-master2/CheapFlightsAppProject/Views/Home/LoginForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Mb2dpbkZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/bartosz/Desktop/CheapFlightsAppProject-master2/CheapFlightsAppProject/Views/Home/ManageFlights.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9NYW5hZ2VGbGlnaHRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/bartosz/Desktop/CheapFlightsAppProject-master2/CheapFlightsAppProject/Views/Home/MyAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9NeUFjY291bnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/bartosz/Desktop/CheapFlightsAppProject-master2/CheapFlightsAppProject/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/bartosz/Desktop/CheapFlightsAppProject-master2/CheapFlightsAppProject/Views/Home/SearchFlight.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9TZWFyY2hGbGlnaHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/bartosz/Desktop/CheapFlightsAppProject-master2/CheapFlightsAppProject/Views/Home/SignUpForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9TaWduVXBGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/bartosz/Desktop/CheapFlightsAppProject-master2/CheapFlightsAppProject/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/bartosz/Desktop/CheapFlightsAppProject-master2/CheapFlightsAppProject/Views/Shared/_AdminMainLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19BZG1pbk1haW5MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/bartosz/Desktop/CheapFlightsAppProject-master2/CheapFlightsAppProject/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/bartosz/Desktop/CheapFlightsAppProject-master2/CheapFlightsAppProject/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/bartosz/Desktop/CheapFlightsAppProject-master2/CheapFlightsAppProject/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/bartosz/Desktop/CheapFlightsAppProject-master2/CheapFlightsAppProject/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-hlgdsduwnb
+
+[/home/bartosz/Desktop/CheapFlightsAppProject-master2/CheapFlightsAppProject/Views/Shared/_MainLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19NYWluTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-xkva8rvyos

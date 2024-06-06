@@ -1,0 +1,46 @@
+﻿/* Flights.css */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flight-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 48%;
+    margin: 10px 0;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+}
+
+
+.flight-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.flight-detail {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.flight-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.flight-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2a9df4;
+    text-align: right;
+    margin-top: 10px;
+}
