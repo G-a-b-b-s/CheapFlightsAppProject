@@ -101,19 +101,6 @@ public class HomeController : Controller
     {
         return null;
     }
-    
-    [Authorize]
-    public IActionResult MainPage()
-    {
-        return View();
-    }
-    
-    [Authorize]
-    public IActionResult AdminMainPage()
-    {
-        return View();
-       
-    }
 
     [Authorize]
     public IActionResult MyAccount()
@@ -189,13 +176,33 @@ public class HomeController : Controller
         {
             TempData["Message"] = "An error occurred!";
         }
-        return RedirectToAction("AdminMainPage");   
+        return RedirectToAction("MyAccount");   
     }
+    public IActionResult ModifyUsers(User user)
+    {
+        var referrer = Request.Headers["Referer"].ToString();
+        if (referrer.Contains("AddAdmins"))
+        {
+            if (_db.AddAdmin(user))
+            {
+                TempData["Message"] = "Admin added successfully!";
+            }
+        }
 
+        if (TempData["Message"] == null)
+        {
+            TempData["Message"] = "An error occurred!";
+        }
+        return RedirectToAction("MyAccount");   
+    }
     [Authorize]
     public IActionResult SaveFlight(string myData) {
         _db.SaveFlight(HttpContext.User.Claims.SingleOrDefault(o=>o.Type==ClaimTypes.NameIdentifier).Value, myData);
         return RedirectToAction("MyAccount");
+    }
+    public IActionResult AddAdmins()
+    {
+        return View();
     }
     
     [AllowAnonymous]
@@ -231,5 +238,6 @@ public class HomeController : Controller
 
         return new JwtSecurityTokenHandler().WriteToken(token);
     }
+
     
 }

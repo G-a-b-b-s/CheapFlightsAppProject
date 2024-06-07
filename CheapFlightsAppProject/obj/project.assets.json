@@ -928,24 +928,26 @@
     ]
   },
   "packageFolders": {
-    "/home/bartosz/.nuget/packages/": {}
+    "C:\\Users\\48735\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/bartosz/Desktop/CheapFlightsAppProject-master2/CheapFlightsAppProject/CheapFlightsAppProject.csproj",
+      "projectUniqueName": "C:\\Users\\48735\\Desktop\\PZ2\\CheapFlightsAppProject\\CheapFlightsAppProject\\CheapFlightsAppProject.csproj",
       "projectName": "CheapFlightsAppProject",
-      "projectPath": "/home/bartosz/Desktop/CheapFlightsAppProject-master2/CheapFlightsAppProject/CheapFlightsAppProject.csproj",
-      "packagesPath": "/home/bartosz/.nuget/packages/",
-      "outputPath": "/home/bartosz/Desktop/CheapFlightsAppProject-master2/CheapFlightsAppProject/obj/",
+      "projectPath": "C:\\Users\\48735\\Desktop\\PZ2\\CheapFlightsAppProject\\CheapFlightsAppProject\\CheapFlightsAppProject.csproj",
+      "packagesPath": "C:\\Users\\48735\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\48735\\Desktop\\PZ2\\CheapFlightsAppProject\\CheapFlightsAppProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/bartosz/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\48735\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1000,6 +1002,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -1008,7 +1028,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.115/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   },

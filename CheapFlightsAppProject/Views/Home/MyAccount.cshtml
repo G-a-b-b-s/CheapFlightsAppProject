@@ -1,7 +1,12 @@
 ﻿@using CheapFlightsAppProject.Database
 @using Microsoft.AspNetCore.Mvc.TagHelpers
 
-
+@if (TempData["Message"] != null)
+{
+    <div id="tempMessage" class="alert alert-success" role="alert">
+        @TempData["Message"]
+    </div>
+}
 @if (ViewBag.role=="0"){
     Layout = "_MainLayout";
 }
@@ -26,22 +31,27 @@ else {
 </div>
 <div class="container">
     @foreach (Flight flight in ViewBag.flights) {
-    <div class="flight-card">
-        <div class="flight-content">
-            <div>
+        <div class="flight-card">
+            <div class="flight-content">
+                <div>
 
-                <div class="flight-description">@flight.Departure</div>
-                <div class="flight-header">@flight.Destination</div>
-                <div class="flight-detail">@flight.Date</div>
-                <div class="flight-detail">Duration: @(Int32.Parse(flight.FlightDuration)/60)h @(Int32.Parse(flight.FlightDuration) - (Int32.Parse(flight.FlightDuration)/60)*60)min</div>
-                <div class="flight-detail">@flight.FlightNumber</div>
-                <div class="flight-detail">@flight.FlightOperator</div>
+                    <div class="flight-description">@flight.Departure</div>
+                    <div class="flight-header">@flight.Destination</div>
+                    <div class="flight-detail">@flight.Date</div>
+                    <div class="flight-detail">Duration: @(Int32.Parse(flight.FlightDuration)/60)h @(Int32.Parse(flight.FlightDuration) - (Int32.Parse(flight.FlightDuration)/60)*60)min</div>
+                    <div class="flight-detail">@flight.FlightNumber</div>
+                    <div class="flight-detail">@flight.FlightOperator</div>
+                </div>
+                <div class="flight-price">zł @flight.Price</div>
             </div>
-            <div class="flight-price">zł @flight.Price</div>
         </div>
-    </div>
     }
 </div>
 
 </body>
 </html>
+<script>
+    setTimeout(function() {
+        $('#tempMessage').fadeOut('fast');
+    }, 3000);
+</script>

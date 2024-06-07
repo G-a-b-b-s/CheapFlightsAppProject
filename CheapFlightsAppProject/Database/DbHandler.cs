@@ -48,6 +48,20 @@ public class DbHandler {
             return false;
         }
     }
+    public bool AddAdmin(User user) {
+        try {
+            User u = Connection.Query<User>($"SELECT * FROM users WHERE username='{@user.username}'").SingleOrDefault();
+            if (u != null) {
+                u.role = 1;
+                Connection.Execute($"UPDATE users SET role = {u.role} WHERE username='{@user.username}'");
+                return true;
+            }
+            return false;
+        }
+        catch (NullReferenceException){
+            return false;
+        }
+    }
     public List<Flight> SearchFlights(string dep, string dest, string date) {
         List <Flight> flight =
             Connection.Query<Flight>($"SELECT * FROM flights " +

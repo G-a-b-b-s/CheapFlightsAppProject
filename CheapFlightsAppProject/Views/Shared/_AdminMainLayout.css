@@ -35,6 +35,9 @@ a.navbar-nav {
     font-size: 20px;
 }
 
+header{
+    font-size: 30px;
+}
 
 
 .nav-item{
@@ -52,9 +55,8 @@ button.accept-policy {
 }
 
 .footer {
-    position: fixed;
+    position: relative;
     text-align: center;
-    bottom: 0;
     width: 100%;
     white-space: nowrap;
     line-height: 60px;

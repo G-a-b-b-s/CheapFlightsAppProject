@@ -1,0 +1,30 @@
+﻿@model dynamic
+
+@if (ViewBag.role=="0"){
+Layout = "_MainLayout";
+}
+else {
+Layout = "_AdminMainLayout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Grant user admin access</title>
+</head>
+<body>
+<div>
+    <div class="text-center">
+        <h1 class="display-4">Grant admin to user : ️</h1>
+        <form method="post" asp-controller="Home" asp-action="ModifyUsers">
+            <div class="form-group">
+                <label for="Username"></label>
+                <input type="text" placeholder="Username" class="form-control" id="Username" name="Username" required/>
+            </div>
+            <button type="submit" class="btn btn-primary">Grant access!</button>
+        </form>
+    </div>  
+</div>
+</body>
+</html>
