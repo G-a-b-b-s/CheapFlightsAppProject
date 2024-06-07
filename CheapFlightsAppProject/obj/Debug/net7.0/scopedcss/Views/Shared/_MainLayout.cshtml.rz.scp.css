@@ -40,6 +40,9 @@ a[b-1p1wtbmqjg] {
 .border-top[b-1p1wtbmqjg] {
     border-top: 1px solid #e5e5e5;
 }
+.container[b-1p1wtbmqjg]{
+    border-bottom: 100px;
+}
 
 button.accept-policy[b-1p1wtbmqjg] {
     font-size: 1rem;

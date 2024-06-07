@@ -48,6 +48,7 @@ button.accept-policy[b-3kk9iytzef] {
 }
 
 .footer[b-3kk9iytzef] {
+  border-top: 40px;
   position: fixed;
   text-align: center;
   bottom: 0;
@@ -99,6 +100,9 @@ a[b-1p1wtbmqjg] {
 
 .border-top[b-1p1wtbmqjg] {
     border-top: 1px solid #e5e5e5;
+}
+.container[b-1p1wtbmqjg]{
+    border-bottom: 100px;
 }
 
 button.accept-policy[b-1p1wtbmqjg] {

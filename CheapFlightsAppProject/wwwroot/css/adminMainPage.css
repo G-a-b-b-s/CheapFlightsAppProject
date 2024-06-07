@@ -12,6 +12,10 @@ html {
     }
 }
 
+.navbar-nav .nav-item.nav-link {
+    font-size: 40px;
+
+}
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
     box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
@@ -37,6 +41,14 @@ body button.btn {
     transition: opacity 1s ease-out;
     opacity: 0;
 }
-footer{
-    ;
+.footer {
+    border-top: 40px;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+    font-size: 20px;
+    margin-top: auto;
 }

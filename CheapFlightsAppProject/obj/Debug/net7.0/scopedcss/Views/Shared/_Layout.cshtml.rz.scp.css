@@ -47,6 +47,7 @@ button.accept-policy[b-3kk9iytzef] {
 }
 
 .footer[b-3kk9iytzef] {
+  border-top: 40px;
   position: fixed;
   text-align: center;
   bottom: 0;
